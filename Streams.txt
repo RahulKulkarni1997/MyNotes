@@ -1,0 +1,11 @@
+1) Primitive data types
+
+2) Boxing and Unboxing
+
+3) System.out::println
+   Long::parseLong 
+what is the meaning of the elements before and after :: ? 
+
+4) Complex Data Transformations.
+
+5) Short Circuit Operations
