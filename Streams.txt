@@ -18,4 +18,4 @@ what is the meaning of the elements before and after :: ?
 
 9) What is BaseStream, Stream ,IntStream, LongStream,DoubleStream.
 
-10 Difference between Stream<Integer> and IntStream.
+10) Difference between Stream<Integer> and IntStream.
