@@ -9,3 +9,13 @@ what is the meaning of the elements before and after :: ?
 4) Complex Data Transformations.
 
 5) Short Circuit Operations
+
+6) Meaning of Optional
+
+7) Meaning of Comparator.comparing() and Employee::salary
+
+8) Predicate Meaning
+
+9) What is BaseStream, Stream ,IntStream, LongStream,DoubleStream.
+
+10 Difference between Stream<Integer> and IntStream.
