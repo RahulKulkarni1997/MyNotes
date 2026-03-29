@@ -1,0 +1,44 @@
+Basic Syntax
+
+Optional<String> opt = Optional.empty();
+
+Optional<Integer> opt = Optional.of(34);
+
+Optional<Integer> opt = Optional.of(null);// will throw NullPointer Exception
+
+Optional<Integer> opt = Optional.ofNullable(null);
+
+
+
+
+Optional Methods and Description
+
+Method                                                      Description
+
+empty()                                              Returns an empty Optional instance
+
+of(T value)                                          Returns an Optional with the specified present non-null value.
+
+ofNullable(T value)                                  Returns an Optional describing the specified value if non-null, else empty
+
+equals(Object obj)                                   Checks if another object is "equal to" this Optional.
+
+filter(Predicate<? super T> predicate)               If a value is present and matches the predicate, returns an Optional with the value; else returns empty.
+
+flatMap(Function<? super T, Optional<U>> mapper)     If a value is present, applies a mapping function that returns an Optional; otherwise returns empty.
+
+get()                                                Returns the value if present, else throws NoSuchElementException.
+
+hashCode()                                           Returns the hash code of the value if present, otherwise returns 0.
+
+ifPresent(Consumer<? super T> consumer)              Returns true if a value is present, else false.
+
+map(Function<? super T, ? extends U> mapper)         If a value is present, applies the mapping function and returns an Optional describing the result (if non-null).
+
+orElse(T other)                                      Returns the value if present, otherwise returns the provided default value.
+
+orElseGet(Supplier<? extends T> other)               Returns the value if present, otherwise invokes the supplier and returns its result.
+
+orElseThrow(Supplier<? extends X> exceptionSupplier) Returns the value if present, otherwise throws an exception provided by the supplier
+
+toString()                                           Returns a non-empty string representation of this Optional for debugging.
