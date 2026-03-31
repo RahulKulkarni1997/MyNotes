@@ -239,3 +239,247 @@ peek() can be useful in situations like this. Simply put, it performs the specif
 
 List<Integer> alst = Arrays.asList(1,5,77,76,12,65,13,1);
 alst.stream().peek(x->System.out.print(x)).map(i->i*2).forEach(s->System.out.println(" - "+s));
+
+
+
+9) mapToInt , mapToLong and mapToDouble 
+
+- These methods transform a stream’s elements into an IntStream, LongStream, or DoubleStream respectively, which are specialized streams for handling primitive data types efficiently. 
+
+- By using these methods, you can avoid the overhead associated with boxing and unboxing objects.
+
+a) mapToInt
+
+Transforms elements to an IntStream.
+
+Example 1:
+List<String> strLst = Arrays.asList("140483","6554","56424");
+strLst.stream().mapToInt(Integer::parseInt).forEach(x->System.out.println(x));
+
+140483
+6554
+56424
+
+Example 2:
+List<String> strLst = Arrays.asList("140483","6554","56424","54.5345");
+strLst.stream().mapToInt(Integer::parseInt).forEach(x->System.out.println(x));
+		
+140483
+6554
+56424
+Exception in thread "main" java.lang.NumberFormatException: For input string: "54.5345"
+
+b) mapToLong
+
+Transforms elements to a LongStream.
+
+Example 1:
+List<String> strLst = Arrays.asList("14048335454","655413124354","5642465464634","54.5345");
+strLst.stream().mapToLong(Long::parseLong).forEach(System.out::println);
+
+//Output
+14048335454
+655413124354
+5642465464634
+Exception in thread "main" java.lang.NumberFormatException: For input string: "54.5345"
+
+c) mapToDouble
+
+Transforms elements to a DoubleStream.
+
+Example 1:
+List<String> strLst = Arrays.asList("140483","655413","5642465","54.5345");
+strLst.stream().mapToDouble(Double::parseDouble).forEach(System.out::println);
+		
+140483.0
+655413.0
+5642465.0
+54.5345
+
+10) flatMapToInt , flatMapToLong , flatMapToDouble 
+
+These operations are used when each element of a stream should be mapped to a stream of primitive values (IntStream, LongStream, or DoubleStream). They flatten the resulting streams into a single stream.
+
+a) flatMapToInt
+
+Maps each element to an IntStream and flattens the result.
+
+Example 1:
+
+List<String> strLst = Arrays.asList("140,483","655,413","5642,465","5,4.5345");
+strLst.stream().flatMapToInt(x->Arrays.stream(x.split(",")).mapToInt(Integer::parseInt)).forEach(x->System.out.println(x));
+
+
+140
+483
+655
+413
+5642
+465
+5
+Exception in thread "main" java.lang.NumberFormatException: For input string: "4.5345"
+
+
+b)flatMapToLong
+
+flatMapToLong produces a LongStream.
+
+List<String> strLst = Arrays.asList("1453453450,423423483","65664365,41323434","5646346342,46232345","52441,412412.145345");
+strLst.stream().flatMapToLong(x->Arrays.stream(x.split(",")).mapToLong(Long::parseLong)).forEach(x->System.out.println(x));
+
+
+1453453450
+423423483
+65664365
+41323434
+5646346342
+46232345
+52441
+Exception in thread "main" java.lang.NumberFormatException: For input string: "412412.145345"
+
+
+c) flatMapToDouble
+
+Maps each element to a DoubleStream and flattens the result.
+
+List<String> strLst = Arrays.asList("1453453450,423423483","65664365,41323434","5646346342,46232345","52441,412412.145345");
+strLst.stream().flatMapToDouble(x->Arrays.stream(x.split(",")).mapToDouble(Double::parseDouble)).forEach(x->System.out.println(x));
+		
+
+1.45345345E9
+4.23423483E8
+6.5664365E7
+4.1323434E7
+5.646346342E9
+4.6232345E7
+52441.0
+412412.145345
+
+
+11) mapMulti
+
+Introduced in Java 9, the mapMulti methods provide a powerful way to perform multi-level mappings, allowing you to handle more complex transformations that yield multiple results from a single input element.
+
+mapMulti
+mapMulti is a flexible version of flatMap, allowing more control over the mapping and the elements’ addition to the output.
+
+Example :
+
+Stream.of(1,2,3).mapMulti((nu,cons)->{
+		cons.accept(nu+"a");
+		cons.accept(nu+"b");
+		cons.accept(nu+"c");
+}).forEach(System.out::println);
+
+1a
+1b
+1c
+2a
+2b
+2c
+3a
+3b
+3c
+
+This example demonstrates generating three strings from each integer and adding them to the resulting stream.
+
+
+a) mapMultiToInt
+
+Stream.of("1,2,3","5,23").mapMultiToInt((s,cond)->{Arrays.stream(s.split(",")).mapToInt(Integer::parseInt).forEach(cond);}).forEach(System.out::println);
+	
+1
+2
+3
+5
+23
+
+This example splits each string and maps them to integers, collecting them into an IntStream.
+
+b) mapMultiToLong
+
+Stream.of("12343243,54335,65446546","765757,74345").mapMultiToLong((s,cond)->{Arrays.stream(s.split(",")).mapToLong(Long::parseLong).forEach(cond);}).forEach(System.out::println);
+
+12343243
+54335
+65446546
+765757
+74345
+
+It splits strings and maps the parts to a LongStream
+
+c)mapMultiToDouble 
+
+For creating a DoubleStream.
+
+Stream.of("1,3.34,234.43","65.3,765.46").mapMultiToDouble((s,cons)->{Arrays.stream(s.split(",")).mapToDouble(Double::parseDouble).forEach(cons);}).forEach(System.out::println);
+
+1.0
+3.34
+234.43
+65.3
+765.46
+
+
+Here, each input string is split and converted into a DoubleStream.
+
+These operations offer greater flexibility and efficiency, particularly when dealing with primitive data types or complex data transformations. They enhance the Java Streams API by providing more granular control over data processing, allowing for more concise and expressive code.
+
+
+Method Types and Pipelines
+
+- Java stream operations are divided into intermediate and terminal operations.
+
+- Intermediate operations such as filter() return a new stream on which further processing can be done. Terminal operations, such as forEach(), mark the stream as consumed, after which point it can no longer be used further.
+
+- A stream pipeline consists of a stream source, followed by zero or more intermediate operations, and a terminal operation.
+
+Here’s a sample stream pipeline, where empList is the source, filter() is the intermediate operation and count is the terminal operation:
+
+Long empCount = empList.stream()
+      .filter(e -> e.getSalary() > 200000)
+      .count();
+
+- Some operations are deemed short-circuiting operations. Short-circuiting operations allow computations on infinite streams to be completed in finite time:
+
+Example :
+
+Stream<Integer> infiniteStream = Stream.iterate(2, i -> i * 2);
+
+List<Integer> collect = infiniteStream
+    .skip(3)
+    .limit(5)
+    .collect(Collectors.toList());
+
+Here, we use short-circuiting operations skip() to skip first three elements, and limit() to limit to five elements from the infinite stream generated using iterate().
+
+**-****-** Lazy Evaluation **-****-**
+One of the most important characteristics of Java streams is that they allow for significant optimizations through lazy evaluations.
+
+Computation on the source data is only performed when the terminal operation is initiated, and source elements are consumed only as needed.
+
+All intermediate operations are lazy, so they’re not executed until a result of processing is needed.
+
+
+For example, consider the findFirst() example we saw earlier. How many times is the map() operation performed here? four times since the input array contains four elements?
+
+Integer[] empIds = { 1, 2, 3, 4 };
+    
+    Employee employee = Stream.of(empIds)
+      .map(employeeRepository::findById)
+      .filter(e -> e != null)
+      .filter(e -> e.getSalary() > 100000)
+      .findFirst()
+      .orElse(null);
+
+Stream performs the map and two filter operations, one element at a time.
+
+It first performs all the operations on ID 1. Since the salary of ID 1 is not greater than 100000, the processing moves on to the next element.
+
+ID 2 satisfies both of the filter predicates and hence the stream evaluates the terminal operation findFirst() and returns the result.
+
+No operations are performed on IDs 3 and 4.
+
+Processing streams lazily allows for avoiding examining all the data when that’s not necessary. This behavior becomes even more important when the input stream is infinite and not just very large.
+
+
