@@ -483,3 +483,63 @@ No operations are performed on IDs 3 and 4.
 Processing streams lazily allows for avoiding examining all the data when that’s not necessary. This behavior becomes even more important when the input stream is infinite and not just very large.
 
 
+
+
+******  Comparison-Based Stream Operations  ******
+
+
+1) sorted() - this sorts the stream elements based on the comparator passed we pass into it.
+
+For example, we can sort Employees based on their names:
+
+@Test
+public void whenSortStream_thenGetSortedStream() {
+    List<Employee> employees = empList.stream()
+      .sorted((e1, e2) -> e1.getName().compareTo(e2.getName()))
+      .collect(Collectors.toList());
+
+    assertEquals(employees.get(0).getName(), "Bill Gates");
+    assertEquals(employees.get(1).getName(), "Jeff Bezos");
+    assertEquals(employees.get(2).getName(), "Mark Zuckerberg");
+}
+Note that short-circuiting will not be applied for sorted().
+
+This means, in the example above, even if we had used findFirst() after the sorted(), the sorting of all the elements is done before applying the findFirst(). This happens because the operation cannot know what the first element is until the entire stream is sorted.
+
+
+Example :
+
+List<Integer> lr = List.of(1,6,-12,65,143,-777,123,87);
+List<Integer> newlr=lr.stream().sorted().collect(Collectors.toList());
+		
+System.out.println(newlr);
+
+
+2) min and max
+
+min() and max() return the minimum and maximum element in the stream respectively, based on a comparator. They return an Optional since a result may or may not exist (due to, say, filtering):
+
+------------------------------------------------------------------------------------
+Example:
+
+List<Integer> lr = List.of(1,6,-12,65,143,-777,123,87);
+List<Integer> newlr=lr.stream().sorted().collect(Collectors.toList());
+		
+System.out.println(newlr);
+
+
+System.out.println(newlr.stream().max((i,j)->(i-j)));
+
+[-777, -12, 1, 6, 65, 87, 123, 143]
+Optional[143]
+
+------------------------------------------------------------------------------------
+
+- (i, j) -> (i - j)
+- This is a lambda expression acting as the comparator.
+- For two integers i and j:
+- If i - j is positive → i is considered greater than j.
+- If i - j is negative → i is considered smaller than j.
+- If i - j is zero → they are equal.
+- Essentially, this comparator sorts numbers in natural ascending order.
+
