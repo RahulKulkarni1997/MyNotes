@@ -1,0 +1,360 @@
+
+(base) C:\Users\user>conda --version
+conda 26.1.1
+
+(base) C:\Users\user>python --version
+Python 3.13.12
+
+(base) C:\Users\user>cd D:
+D:\
+
+(base) C:\Users\user>DL
+'DL' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\user>D:
+
+(base) D:\>mkdir python
+
+(base) D:\>cd python
+
+(base) D:\python>dir
+ Volume in drive D has no label.
+ Volume Serial Number is 2A16-BA20
+
+ Directory of D:\python
+
+15-04-2026  08:05    <DIR>          .
+15-04-2026  08:05    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  157,667,753,984 bytes free
+
+(base) D:\python>explorer D:\python
+
+(base) D:\python>py ma.py
+Hello
+
+(base) D:\python>dir
+ Volume in drive D has no label.
+ Volume Serial Number is 2A16-BA20
+
+ Directory of D:\python
+
+15-04-2026  08:06    <DIR>          .
+15-04-2026  08:06    <DIR>          ..
+15-04-2026  08:06                15 ma.py
+               1 File(s)             15 bytes
+               2 Dir(s)  157,667,753,984 bytes free
+
+(base) D:\python>conda install jupyter
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/main? [(a)ccept/(r)eject/(v)iew]: y
+Please select one of the available options
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/main? [(a)ccept/(r)eject/(v)iew]: y
+Please select one of the available options
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/main? [(a)ccept/(r)eject/(v)iew]: y
+Please select one of the available options
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/main? [(a)ccept/(r)eject/(v)iew]: y
+Please select one of the available options
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/main? [(a)ccept/(r)eject/(v)iew]: a
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/r? [(a)ccept/(r)eject/(v)iew]: a
+Do you accept the Terms of Service (ToS) for https://repo.anaconda.com/pkgs/msys2? [(a)ccept/(r)eject/(v)iew]: a
+3 channel Terms of Service accepted
+Retrieving notices: done
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.1.1
+    latest version: 26.3.2
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\user\miniconda3
+
+  added / updated specs:
+    - jupyter
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    argon2-cffi-25.1.0         |  py313haa95532_0          34 KB
+    argon2-cffi-bindings-25.1.0|  py313h02ab6af_0          41 KB
+    asttokens-3.0.1            |  py313haa95532_0          69 KB
+    async-lru-2.0.5            |  py313haa95532_0          21 KB
+    attrs-26.1.0               |  py313h35db113_0         177 KB
+    babel-2.17.0               |  py313haa95532_0        13.3 MB
+    beautifulsoup4-4.14.3      |  py313haa95532_0         252 KB
+    bleach-6.3.0               |  py313haa95532_0          96 KB
+    ca-certificates-2026.3.19  |       haa95532_0         126 KB
+    comm-0.2.3                 |  py313haa95532_0          17 KB
+    conpty-1.23.20211.0        |       h169ad4e_1         517 KB
+    debugpy-1.8.16             |  py313h885b0b7_1         3.6 MB
+    decorator-5.2.1            |  py313haa95532_0          42 KB
+    defusedxml-0.7.1           |     pyhd3eb1b0_0          23 KB
+    executing-2.2.1            |  py313haa95532_0         340 KB
+    html5lib-1.1               |     pyhd3eb1b0_0          91 KB
+    ipykernel-7.2.0            |  py313h4442805_0         252 KB
+    ipython-9.11.0             |  py313haa95532_0         1.2 MB
+    ipython_pygments_lexers-1.1.1|  py313haa95532_0          19 KB
+    ipywidgets-8.1.7           |  py313haa95532_1         243 KB
+    jedi-0.19.2                |  py313haa95532_0         1.2 MB
+    jinja2-3.1.6               |  py313haa95532_0         362 KB
+    json5-0.12.1               |  py313haa95532_0          93 KB
+    jsonschema-4.25.1          |  py313haa95532_0         218 KB
+    jsonschema-specifications-2025.9.1|  py313haa95532_0          17 KB
+    jupyter-1.1.1              |  py313haa95532_0           9 KB
+    jupyter-lsp-2.3.0          |  py313haa95532_0         117 KB
+    jupyter_client-8.8.0       |  py313haa95532_0         258 KB
+    jupyter_console-6.6.3      |  py313haa95532_1          77 KB
+    jupyter_core-5.9.1         |  py313haa95532_0         119 KB
+    jupyter_events-0.12.0      |  py313haa95532_1          68 KB
+    jupyter_server-2.17.0      |  py313haa95532_1         609 KB
+    jupyter_server_terminals-0.5.4|  py313haa95532_0          26 KB
+    jupyterlab-4.5.6           |  py313haa95532_0         8.6 MB
+    jupyterlab_pygments-0.3.0  |  py313haa95532_0          20 KB
+    jupyterlab_server-2.28.0   |  py313haa95532_1         119 KB
+    jupyterlab_widgets-3.0.16  |  py313haa95532_1         580 KB
+    libsodium-1.0.20           |       h83e8143_0         562 KB
+    markupsafe-3.0.2           |  py313h827c3e9_0          38 KB
+    matplotlib-inline-0.2.1    |  py313haa95532_0          20 KB
+    mistune-3.1.2              |  py313haa95532_0         148 KB
+    nbclient-0.10.4            |  py313haa95532_0          78 KB
+    nbconvert-7.17.0           |  py313haa95532_0           8 KB
+    nbconvert-core-7.17.0      |  py313haa95532_0         528 KB
+    nbconvert-pandoc-7.17.0    |  py313haa95532_0           8 KB
+    nbformat-5.10.4            |  py313haa95532_0         177 KB
+    nest-asyncio-1.6.0         |  py313haa95532_0          17 KB
+    notebook-7.5.5             |  py313haa95532_0        10.3 MB
+    notebook-shim-0.2.4        |  py313haa95532_1          26 KB
+    openssl-3.5.6              |       hbb43b14_0         8.9 MB
+    pandoc-3.8                 |       haa95532_0        24.9 MB
+    pandocfilters-1.5.1        |  py313haa95532_0          17 KB
+    parso-0.8.5                |  py313haa95532_0         231 KB
+    prometheus_client-0.24.1   |  py313haa95532_0         168 KB
+    prompt-toolkit-3.0.52      |  py313haa95532_1         714 KB
+    prompt_toolkit-3.0.52      |       hd3eb1b0_1           5 KB
+    psutil-7.0.0               |  py313h02ab6af_1         561 KB
+    pure_eval-0.2.3            |  py313haa95532_0          34 KB
+    python-dateutil-2.9.0post0 |  py313haa95532_2         307 KB
+    python-fastjsonschema-2.21.2|  py313haa95532_0         249 KB
+    python-json-logger-4.0.0   |  py313haa95532_0          35 KB
+    pywin32-311                |  py313h885b0b7_0        11.6 MB
+    pywinpty-3.0.2             |  py313hbe95b07_0         233 KB
+    pyyaml-6.0.3               |  py313hb9a58be_0         227 KB
+    pyzmq-27.1.0               |  py313h7149c55_1         368 KB
+    qtconsole-5.7.1            |  py313haa95532_0         281 KB
+    qtpy-2.4.3                 |  py313haa95532_0         154 KB
+    referencing-0.37.0         |  py313haa95532_0          81 KB
+    rfc3339-validator-0.1.4    |  py313haa95532_0          11 KB
+    rfc3986-validator-0.1.1    |  py313haa95532_0          11 KB
+    rpds-py-0.28.0             |  py313h114bc41_0         215 KB
+    send2trash-1.8.3           |  py313haa95532_0          59 KB
+    six-1.17.0                 |  py313haa95532_0          38 KB
+    soupsieve-2.5              |  py313haa95532_0          86 KB
+    stack_data-0.6.3           |  py313haa95532_0          66 KB
+    terminado-0.18.1           |  py313haa95532_1          33 KB
+    tinycss2-1.4.0             |  py313haa95532_0         103 KB
+    tornado-6.5.5              |  py313h1c6eee0_0         869 KB
+    traitlets-5.14.3           |  py313haa95532_0         209 KB
+    wcwidth-0.2.14             |  py313haa95532_0          67 KB
+    webencodings-0.5.1         |  py313haa95532_2          27 KB
+    websocket-client-1.8.0     |  py313haa95532_0         136 KB
+    widgetsnbextension-4.0.14  |  py313haa95532_0         864 KB
+    winpty-0.4.3               |       haa95532_5         369 KB
+    yaml-0.2.5                 |       he774522_0          62 KB
+    zeromq-4.3.5               |       h6c54ac7_1         4.0 MB
+    ------------------------------------------------------------
+                                           Total:       100.8 MB
+
+The following NEW packages will be INSTALLED:
+
+  argon2-cffi        pkgs/main/win-64::argon2-cffi-25.1.0-py313haa95532_0
+  argon2-cffi-bindi~ pkgs/main/win-64::argon2-cffi-bindings-25.1.0-py313h02ab6af_0
+  asttokens          pkgs/main/win-64::asttokens-3.0.1-py313haa95532_0
+  async-lru          pkgs/main/win-64::async-lru-2.0.5-py313haa95532_0
+  attrs              pkgs/main/win-64::attrs-26.1.0-py313h35db113_0
+  babel              pkgs/main/win-64::babel-2.17.0-py313haa95532_0
+  beautifulsoup4     pkgs/main/win-64::beautifulsoup4-4.14.3-py313haa95532_0
+  bleach             pkgs/main/win-64::bleach-6.3.0-py313haa95532_0
+  comm               pkgs/main/win-64::comm-0.2.3-py313haa95532_0
+  conpty             pkgs/main/win-64::conpty-1.23.20211.0-h169ad4e_1
+  debugpy            pkgs/main/win-64::debugpy-1.8.16-py313h885b0b7_1
+  decorator          pkgs/main/win-64::decorator-5.2.1-py313haa95532_0
+  defusedxml         pkgs/main/noarch::defusedxml-0.7.1-pyhd3eb1b0_0
+  executing          pkgs/main/win-64::executing-2.2.1-py313haa95532_0
+  html5lib           pkgs/main/noarch::html5lib-1.1-pyhd3eb1b0_0
+  ipykernel          pkgs/main/win-64::ipykernel-7.2.0-py313h4442805_0
+  ipython            pkgs/main/win-64::ipython-9.11.0-py313haa95532_0
+  ipython_pygments_~ pkgs/main/win-64::ipython_pygments_lexers-1.1.1-py313haa95532_0
+  ipywidgets         pkgs/main/win-64::ipywidgets-8.1.7-py313haa95532_1
+  jedi               pkgs/main/win-64::jedi-0.19.2-py313haa95532_0
+  jinja2             pkgs/main/win-64::jinja2-3.1.6-py313haa95532_0
+  json5              pkgs/main/win-64::json5-0.12.1-py313haa95532_0
+  jsonschema         pkgs/main/win-64::jsonschema-4.25.1-py313haa95532_0
+  jsonschema-specif~ pkgs/main/win-64::jsonschema-specifications-2025.9.1-py313haa95532_0
+  jupyter            pkgs/main/win-64::jupyter-1.1.1-py313haa95532_0
+  jupyter-lsp        pkgs/main/win-64::jupyter-lsp-2.3.0-py313haa95532_0
+  jupyter_client     pkgs/main/win-64::jupyter_client-8.8.0-py313haa95532_0
+  jupyter_console    pkgs/main/win-64::jupyter_console-6.6.3-py313haa95532_1
+  jupyter_core       pkgs/main/win-64::jupyter_core-5.9.1-py313haa95532_0
+  jupyter_events     pkgs/main/win-64::jupyter_events-0.12.0-py313haa95532_1
+  jupyter_server     pkgs/main/win-64::jupyter_server-2.17.0-py313haa95532_1
+  jupyter_server_te~ pkgs/main/win-64::jupyter_server_terminals-0.5.4-py313haa95532_0
+  jupyterlab         pkgs/main/win-64::jupyterlab-4.5.6-py313haa95532_0
+  jupyterlab_pygmen~ pkgs/main/win-64::jupyterlab_pygments-0.3.0-py313haa95532_0
+  jupyterlab_server  pkgs/main/win-64::jupyterlab_server-2.28.0-py313haa95532_1
+  jupyterlab_widgets pkgs/main/win-64::jupyterlab_widgets-3.0.16-py313haa95532_1
+  libsodium          pkgs/main/win-64::libsodium-1.0.20-h83e8143_0
+  markupsafe         pkgs/main/win-64::markupsafe-3.0.2-py313h827c3e9_0
+  matplotlib-inline  pkgs/main/win-64::matplotlib-inline-0.2.1-py313haa95532_0
+  mistune            pkgs/main/win-64::mistune-3.1.2-py313haa95532_0
+  nbclient           pkgs/main/win-64::nbclient-0.10.4-py313haa95532_0
+  nbconvert          pkgs/main/win-64::nbconvert-7.17.0-py313haa95532_0
+  nbconvert-core     pkgs/main/win-64::nbconvert-core-7.17.0-py313haa95532_0
+  nbconvert-pandoc   pkgs/main/win-64::nbconvert-pandoc-7.17.0-py313haa95532_0
+  nbformat           pkgs/main/win-64::nbformat-5.10.4-py313haa95532_0
+  nest-asyncio       pkgs/main/win-64::nest-asyncio-1.6.0-py313haa95532_0
+  notebook           pkgs/main/win-64::notebook-7.5.5-py313haa95532_0
+  notebook-shim      pkgs/main/win-64::notebook-shim-0.2.4-py313haa95532_1
+  pandoc             pkgs/main/win-64::pandoc-3.8-haa95532_0
+  pandocfilters      pkgs/main/win-64::pandocfilters-1.5.1-py313haa95532_0
+  parso              pkgs/main/win-64::parso-0.8.5-py313haa95532_0
+  prometheus_client  pkgs/main/win-64::prometheus_client-0.24.1-py313haa95532_0
+  prompt-toolkit     pkgs/main/win-64::prompt-toolkit-3.0.52-py313haa95532_1
+  prompt_toolkit     pkgs/main/noarch::prompt_toolkit-3.0.52-hd3eb1b0_1
+  psutil             pkgs/main/win-64::psutil-7.0.0-py313h02ab6af_1
+  pure_eval          pkgs/main/win-64::pure_eval-0.2.3-py313haa95532_0
+  python-dateutil    pkgs/main/win-64::python-dateutil-2.9.0post0-py313haa95532_2
+  python-fastjsonsc~ pkgs/main/win-64::python-fastjsonschema-2.21.2-py313haa95532_0
+  python-json-logger pkgs/main/win-64::python-json-logger-4.0.0-py313haa95532_0
+  pywin32            pkgs/main/win-64::pywin32-311-py313h885b0b7_0
+  pywinpty           pkgs/main/win-64::pywinpty-3.0.2-py313hbe95b07_0
+  pyyaml             pkgs/main/win-64::pyyaml-6.0.3-py313hb9a58be_0
+  pyzmq              pkgs/main/win-64::pyzmq-27.1.0-py313h7149c55_1
+  qtconsole          pkgs/main/win-64::qtconsole-5.7.1-py313haa95532_0
+  qtpy               pkgs/main/win-64::qtpy-2.4.3-py313haa95532_0
+  referencing        pkgs/main/win-64::referencing-0.37.0-py313haa95532_0
+  rfc3339-validator  pkgs/main/win-64::rfc3339-validator-0.1.4-py313haa95532_0
+  rfc3986-validator  pkgs/main/win-64::rfc3986-validator-0.1.1-py313haa95532_0
+  rpds-py            pkgs/main/win-64::rpds-py-0.28.0-py313h114bc41_0
+  send2trash         pkgs/main/win-64::send2trash-1.8.3-py313haa95532_0
+  six                pkgs/main/win-64::six-1.17.0-py313haa95532_0
+  soupsieve          pkgs/main/win-64::soupsieve-2.5-py313haa95532_0
+  stack_data         pkgs/main/win-64::stack_data-0.6.3-py313haa95532_0
+  terminado          pkgs/main/win-64::terminado-0.18.1-py313haa95532_1
+  tinycss2           pkgs/main/win-64::tinycss2-1.4.0-py313haa95532_0
+  tornado            pkgs/main/win-64::tornado-6.5.5-py313h1c6eee0_0
+  traitlets          pkgs/main/win-64::traitlets-5.14.3-py313haa95532_0
+  wcwidth            pkgs/main/win-64::wcwidth-0.2.14-py313haa95532_0
+  webencodings       pkgs/main/win-64::webencodings-0.5.1-py313haa95532_2
+  websocket-client   pkgs/main/win-64::websocket-client-1.8.0-py313haa95532_0
+  widgetsnbextension pkgs/main/win-64::widgetsnbextension-4.0.14-py313haa95532_0
+  winpty             pkgs/main/win-64::winpty-0.4.3-haa95532_5
+  yaml               pkgs/main/win-64::yaml-0.2.5-he774522_0
+  zeromq             pkgs/main/win-64::zeromq-4.3.5-h6c54ac7_1
+
+The following packages will be UPDATED:
+
+  ca-certificates                      2025.12.2-haa95532_0 --> 2026.3.19-haa95532_0
+  openssl                                  3.5.5-hbb43b14_0 --> 3.5.6-hbb43b14_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+pandoc-3.8           | 24.9 MB   | ######1                                                                      |   8%
+babel-2.17.0         | 13.3 MB   | #################                                                            |  22%
+pywin32-311          | 11.6 MB   | ##########                                                                   |  13%
+notebook-7.5.5       | 10.3 MB   | ###########################                                                  |  36%
+openssl-3.5.6        | 8.9 MB    | ##############################9                                              |  41%
+jupyterlab-4.5.6     | 8.6 MB    |                                                                              |   0%
+zeromq-4.3.5         | 4.0 MB    |                                                                              |   0%
+debugpy-1.8.16       | 3.6 MB    |                                                                              |   0%
+ipython-9.11.0       | 1.2 MB    |                                                                              |   0%
+jedi-0.19.2          | 1.2 MB    |                                                                              |   0%
+tornado-6.5.5        | 869 KB    |                                                                              |   0%
+widgetsnbextension-4 | 864 KB    |                                                                              |   0%
+prompt-toolkit-3.0.5 | 714 KB    |                                                                              |   0%
+jupyter_server-2.17. | 609 KB    |                                                                              |   0%
+jupyterlab_widgets-3 | 580 KB    |                                                                              |   0%
+libsodium-1.0.20     | 562 KB    |                                                                              |   0%
+psutil-7.0.0         | 561 KB    |                                                                              |   0%
+nbconvert-core-7.17. | 528 KB    |                                                                              |   0%
+conpty-1.23.20211.0  | 517 KB    |                                                                              |   0%
+winpty-0.4.3         | 369 KB    |                                                                              |   0%
+pyzmq-27.1.0         | 368 KB    |                                                                              |   0%
+jinja2-3.1.6         | 362 KB    |                                                                              |   0%
+executing-2.2.1      | 340 KB    |                                                                              |   0%
+python-dateutil-2.9. | 307 KB    |                                                                              |   0%
+qtconsole-5.7.1      | 281 KB    |                                                                              |   0%
+jupyter_client-8.8.0 | 258 KB    |                                                                              |   0%
+ipykernel-7.2.0      | 252 KB    |                                                                              |   0%
+beautifulsoup4-4.14. | 252 KB    |                                                                              |   0%
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(base) D:\python>jupyter lab
+[I 2026-04-15 08:10:49.485 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-04-15 08:10:49.504 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-04-15 08:10:49.521 ServerApp] jupyterlab | extension was successfully linked.
+[I 2026-04-15 08:10:49.536 ServerApp] notebook | extension was successfully linked.
+[I 2026-04-15 08:10:49.552 ServerApp] Writing Jupyter server cookie secret to C:\Users\user\AppData\Roaming\jupyter\runtime\jupyter_cookie_secret
+[I 2026-04-15 08:10:50.663 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-04-15 08:10:50.952 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-04-15 08:10:50.959 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-04-15 08:10:50.961 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-04-15 08:10:50.970 LabApp] JupyterLab extension loaded from C:\Users\user\miniconda3\Lib\site-packages\jupyterlab
+[I 2026-04-15 08:10:50.971 LabApp] JupyterLab application directory is C:\Users\user\miniconda3\share\jupyter\lab
+[I 2026-04-15 08:10:50.973 LabApp] Extension Manager is 'pypi'.
+[I 2026-04-15 08:10:51.115 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-04-15 08:10:51.133 ServerApp] notebook | extension was successfully loaded.
+[I 2026-04-15 08:10:51.136 ServerApp] Serving notebooks from local directory: D:\python
+[I 2026-04-15 08:10:51.137 ServerApp] Jupyter Server 2.17.0 is running at:
+[I 2026-04-15 08:10:51.138 ServerApp] http://localhost:8888/lab?token=33243c06158e981998cf4b1f3f11b47891a29c3341fb70df
+[I 2026-04-15 08:10:51.138 ServerApp]     http://127.0.0.1:8888/lab?token=33243c06158e981998cf4b1f3f11b47891a29c3341fb70df
+[I 2026-04-15 08:10:51.139 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2026-04-15 08:10:51.266 ServerApp]
+
+    To access the server, open this file in a browser:
+        file:///C:/Users/user/AppData/Roaming/jupyter/runtime/jpserver-1740-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/lab?token=33243c06158e981998cf4b1f3f11b47891a29c3341fb70df
+        http://127.0.0.1:8888/lab?token=33243c06158e981998cf4b1f3f11b47891a29c3341fb70df
+[I 2026-04-15 08:10:55.355 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2026-04-15 08:11:01.420 LabApp] Build is up to date
+[I 2026-04-15 08:11:11.256 ServerApp] Creating new notebook in
+[I 2026-04-15 08:11:11.417 ServerApp] Writing notebook-signing key to C:\Users\user\AppData\Roaming\jupyter\notebook_secret
+[I 2026-04-15 08:11:12.866 ServerApp] Kernel started: 585a411f-65bf-4d3a-af06-3de8f2e6a4b7
+[I 2026-04-15 08:11:16.431 ServerApp] Adapting from protocol version 5.3 (kernel 585a411f-65bf-4d3a-af06-3de8f2e6a4b7) to 5.4 (client).
+[I 2026-04-15 08:11:16.432 ServerApp] Adapting from protocol version 5.3 (kernel 585a411f-65bf-4d3a-af06-3de8f2e6a4b7) to 5.4 (client).
+[I 2026-04-15 08:11:16.435 ServerApp] Connecting to kernel 585a411f-65bf-4d3a-af06-3de8f2e6a4b7.
+[I 2026-04-15 08:11:16.458 ServerApp] Connecting to kernel 585a411f-65bf-4d3a-af06-3de8f2e6a4b7.
+[W 2026-04-15 08:11:16.491 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2026-04-15 08:11:16.505 ServerApp] Adapting from protocol version 5.3 (kernel 585a411f-65bf-4d3a-af06-3de8f2e6a4b7) to 5.4 (client).
+[I 2026-04-15 08:11:16.516 ServerApp] Connecting to kernel 585a411f-65bf-4d3a-af06-3de8f2e6a4b7.
+[I 2026-04-15 08:13:12.057 ServerApp] Saving file at /Untitled.ipynb
+[I 2026-04-15 08:15:12.191 ServerApp] Saving file at /Untitled.ipynb
+[W 2026-04-15 08:17:12.359 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=1&contentProviderId=undefined&1776221232347 (dda02ac1d8204edba963f70a2cac7d21@::1) 5.98ms referer=http://localhost:8888/lab/tree/Untitled.ipynb
+[W 2026-04-15 08:17:12.365 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=1&contentProviderId=undefined&1776221232347 (::1): No such file or directory: Untitled.ipynb
+[I 2026-04-15 08:17:12.418 ServerApp] Uploading file to /Untitled.ipynb
+[I 2026-04-15 08:17:14.342 ServerApp] Starting buffering for 585a411f-65bf-4d3a-af06-3de8f2e6a4b7:9b21b6f0-fdbf-4b6f-8090-ad4ee4e2c874
+[I 2026-04-15 08:17:21.276 ServerApp] Interrupted...
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+
+(base) D:\python>cd
