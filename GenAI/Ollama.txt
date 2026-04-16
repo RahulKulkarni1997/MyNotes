@@ -59,3 +59,91 @@ Use Ctrl + d or /bye to exit.
 >>>
 
 C:\Users\user>
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>ollama serve
+Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+C:\Users\user>https://localhost:11434 --help
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\user>https://localhost:11434
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\user>localhost:11434 --help
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\user>ollama --help
+Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start Ollama
+  create      Create a model
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  signin      Sign in to ollama.com
+  signout     Sign out from ollama.com
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  launch      Launch the Ollama menu or an integration
+  help        Help about any command
+
+Flags:
+  -h, --help         help for ollama
+      --nowordwrap   Don't wrap words to the next line automatically
+      --verbose      Show timings for response
+  -v, --version      Show version information
+
+Use "ollama [command] --help" for more information about a command.
+
+C:\Users\user>ollama stop
+Error: accepts 1 arg(s), received 0
+
+C:\Users\user>ollama stop mistral
+
+C:\Users\user>ollama ps
+NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL
+
+C:\Users\user>ollama run mistral
+>>> hello
+ Hello! How can I help you today? If you have any questions or need assistance with something, feel free to ask.
+I'm here to help!
+
+>>> what is the current date and time ?
+ The current date and time as of my last update is February 18th, 2023 at 9:37 PM (EST). However, please note that
+this information may have changed since my last update. To get the most accurate and up-to-date information, I
+recommend checking a reliable source such as a clock or calendar app on your device or visiting a website like
+timeanddate.com.
+
+>>> who is the us president currently ?
+ As of February 18th, 2023, the President of the United States is Joe Biden. He assumed office on January 20th,
+2021 after being elected in the 2020 presidential election. President Biden serves as a member of the Democratic
+Party and is the 46th president of the United States.
+
+>>>
+Use Ctrl + d or /bye to exit.
+>>>
+
+C:\Users\user>ollama ps
+NAME              ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+Mistral:latest    6577803aa9a0    4.8 GB    100% CPU     4096       4 minutes from now
+
+C:\Users\user>
