@@ -1,0 +1,61 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>ollama serve
+Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+C:\Users\user>ollama --help
+Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start Ollama
+  create      Create a model
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  signin      Sign in to ollama.com
+  signout     Sign out from ollama.com
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  launch      Launch the Ollama menu or an integration
+  help        Help about any command
+
+Flags:
+  -h, --help         help for ollama
+pulling manifest
+pulling f5074b1221da:   0% ▕                                                          ▏ 4.2 MB/4.4 GB  2.6 MB/s  28m22s
+  -v, --version      Show version information
+
+Use "ollama [command] --help" for more information about a command.
+pulling manifest
+pulling f5074b1221da:   0% ▕                                                          ▏ 2.6 MB/4.4 GB
+pulling manifest
+pulling manifest
+pulling f5074b1221da: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████▏ 4.4 GB
+pulling 43070e2d4e53: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████▏  11 KB
+pulling 1ff5b64b61b9: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████▏  799 B
+pulling ed11eda7790d: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████▏   30 B
+pulling 1064e17101bd: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████████████████▏  487 B
+verifying sha256 digest
+writing manifest
+success
+>>> what is your name ?
+ I don't have a personal name, but you can call me Mistral. How can I assist you today?
+
+>>> what is today date and time ?
+ Today is January 31st, 2023. The current time depends on where you are located, but as of now, it is approximately 9:00 AM Pacific Time in the United States. You
+can check the exact time and date for your location by using a world clock or time zone converter online.
+
+>>>
+Use Ctrl + d or /bye to exit.
+>>>
+
+C:\Users\user>
