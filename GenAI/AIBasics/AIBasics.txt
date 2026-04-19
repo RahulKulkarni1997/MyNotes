@@ -1,0 +1,44 @@
+Artificial Intelligence (AI) is the simulation of human intelligence by machines, designed to learn, reason, and act to solve complex problems. Primarily developed by researchers like Alan Turing and John McCarthy in the 1950s, AI is now used globally across industries—from healthcare to finance—to automate tasks, improve efficiency, and analyze massive datasets. 
+
+
+Who Created AI?
+Founding Fathers: Alan Turing (proposed machine intelligence in 1950), John McCarthy (coined the term "Artificial Intelligence" in 1956), Marvin Minsky, Allen Newell, and Herbert Simon.
+
+Key Contributors: Researchers throughout the 1960s-80s (e.g., Geoffrey Hinton in deep learning) and modern innovators at firms like OpenAI, Google, and Meta. 
+
+When Did AI Start and Evolve?
+1940s-50s (Birth): Post-WWII, early work on electronic brains and Alan Turing’s "imitation game" (1950).
+
+1956 (Formalization): The Dartmouth Conference, where "Artificial Intelligence" was adopted.
+
+1980s-90s (Ups & Downs): Expert systems thrived, followed by "AI winters" due to high costs/low computing power.
+
+1997 (Breakthrough): IBM’s Deep Blue beat world chess champion Garry Kasparov.
+
+2010s-Present (Boom): Machine learning, deep learning, and Big Data (e.g., Siri, Alexa, ChatGPT) became popular due to increased computing power (GPUs). 
+
+Where is AI Used?
+
+Daily Applications: Facial recognition (phone unlocking), virtual assistants (Siri, Alexa), social media feeds, and Netflix recommendations.
+
+Industry: Healthcare (cancer detection), finance (fraud detection), automotive (self-driving cars), and retail.
+
+Locations: Developed at major tech companies (Google, Microsoft, Amazon, OpenAI) and research universities worldwide. 
+
+
+Why Was AI Developed?
+
+Automation: To handle repetitive or dangerous tasks, freeing up human labor.
+
+Efficiency: To analyze vast amounts of data, identify patterns, and make faster, more accurate predictions than humans.
+
+Problem Solving: To solve complex problems, such as medical diagnostics, language translation, and scientific discoveries, that require high-level cognitive functions. 
+
+
+Types of AI
+
+Reactive Machines: Limited AI that acts on current stimuli without memory (e.g., Deep Blue).
+
+Limited Memory: Modern AI that uses past data to improve, such as self-driving cars.
+
+Generative AI: AI that creates new content, such as text, images, or music (e.g., ChatGPT, DALL-E). 
